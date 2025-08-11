@@ -1,0 +1,1 @@
+{"base_recommendations": {"ndcg": 0.05619301646947861, "jsd": 0.23943403363227844}, "postprocessed": {}, "finetuned": {"epoch_1": {"ndcg": 0.003170153358951211, "jsd": 0.25213780999183655}}}

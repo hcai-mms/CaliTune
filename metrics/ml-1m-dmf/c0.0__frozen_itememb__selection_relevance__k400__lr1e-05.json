@@ -1,0 +1,35 @@
+{
+  "base_recommendations": {
+    "ndcg": 0.2663273811340332,
+    "jsd": 0.12193825840950012,
+    "ndcg_usergroup_1": 0.21388721466064453,
+    "jsd_usergroup_1": 0.11441239714622498,
+    "ndcg_usergroup_2": 0.256170392036438,
+    "jsd_usergroup_2": 0.12063903361558914,
+    "ndcg_usergroup_3": 0.34923845529556274,
+    "jsd_usergroup_3": 0.13336177170276642
+  },
+  "postprocessed": {},
+  "finetuned": {
+    "epoch_1": {
+      "ndcg": 0.2487916350364685,
+      "jsd": 0.10224556922912598,
+      "ndcg_usergroup_1": 0.20555725693702698,
+      "jsd_usergroup_1": 0.0911281481385231,
+      "ndcg_usergroup_2": 0.23755310475826263,
+      "jsd_usergroup_2": 0.1012888178229332,
+      "ndcg_usergroup_3": 0.32574158906936646,
+      "jsd_usergroup_3": 0.11623318493366241
+    },
+    "epoch_2": {
+      "ndcg": 0.22758755087852478,
+      "jsd": 0.09600365161895752,
+      "ndcg_usergroup_1": 0.19067679345607758,
+      "jsd_usergroup_1": 0.08181645721197128,
+      "ndcg_usergroup_2": 0.21413730084896088,
+      "jsd_usergroup_2": 0.09588424116373062,
+      "ndcg_usergroup_3": 0.3048490285873413,
+      "jsd_usergroup_3": 0.11054904013872147
+    }
+  }
+}

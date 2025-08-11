@@ -1,0 +1,25 @@
+{
+  "base_recommendations": {
+    "ndcg": 0.05619301646947861,
+    "jsd": 0.23943403363227844,
+    "ndcg_usergroup_1": 0.1154973953962326,
+    "jsd_usergroup_1": 0.21157853305339813,
+    "ndcg_usergroup_2": 0.04497496411204338,
+    "jsd_usergroup_2": 0.2297888845205307,
+    "ndcg_usergroup_3": 0.030539143830537796,
+    "jsd_usergroup_3": 0.2962217926979065
+  },
+  "postprocessed": {},
+  "finetuned": {
+    "epoch_1": {
+      "ndcg": 0.04601225256919861,
+      "jsd": 0.18062211573123932,
+      "ndcg_usergroup_1": 0.08923541009426117,
+      "jsd_usergroup_1": 0.14055532217025757,
+      "ndcg_usergroup_2": 0.037277571856975555,
+      "jsd_usergroup_2": 0.1721021980047226,
+      "ndcg_usergroup_3": 0.02899029850959778,
+      "jsd_usergroup_3": 0.24624595046043396
+    }
+  }
+}

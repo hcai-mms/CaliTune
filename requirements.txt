@@ -1,0 +1,8 @@
+matplotlib==3.10.1
+numba==0.61.0
+numpy==1.26.4
+pandas==2.2.3
+PyYAML==6.0.2
+recbole==1.2.1
+torch==2.5.1
+tqdm==4.67.1

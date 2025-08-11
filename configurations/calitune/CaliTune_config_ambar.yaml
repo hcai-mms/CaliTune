@@ -1,0 +1,48 @@
+random_seed: 111
+
+# ===Paths===
+data_path: 'data'
+splits_folder: 'splits'
+
+## ===Finetuning===
+# ==General Settings==
+device: 'cuda:0'
+model: 'CaliBPR'
+num_epochs: 500
+train_batch_size: 16
+valid_batch_size: 100
+# ==Learning Rate Settings==
+learning_rate: 0.0001
+schedule_lr: True
+lr_scheduler_step_size: 20
+lr_scheduler_gamma: 0.9
+
+# ==Optimization Settings==
+# Which loss function to use for finetuning
+loss_param: 'kl'
+# Should the item embeddings be frozen during finetuning?
+freeze_item_emb: True
+# Finetuning mode: 'combined' (both Pop Calibration and Accuracy), 'pop' (only Pop Calibration), 'rec' (only Accuracy)
+finetuning_mode: 'combined'
+# for the combined mode, the alpha parameter controls the balance between the two losses (0.0 = only rec, 1.0 = only pop)
+combined_mode_alpha: 0.5
+
+# ==Candidate Settings==
+# The candidate selection method to use: Available methods are 'relevance' (highest scores) and 'random' (random candidates)
+candidate_selection: 'relevance'
+# How many entries to consider for the list-wise finetuning
+k_candidates: 400
+# Should the candidates be regenerated each epoch?
+regenerate_candidates: True
+
+## ===Validation / Early Stopping Settings===
+# Should items from the validation set be removed (from what??)?
+remove_valid_items: True
+# k parameter for NDCG score
+top_k_ndcg: 10
+# after how many epochs without improvement of selected validation metric should finetuning stop early
+early_stopping_patience: 40
+# Which metric to consider for model saving and early stopping ('any', 'ndcg, 'pop_jsd', 'tradeoff')
+target_metric: 'any'
+# After how many improvements of selected validation metric to save
+model_save_interval: 1

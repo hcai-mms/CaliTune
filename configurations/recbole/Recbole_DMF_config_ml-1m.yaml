@@ -1,0 +1,42 @@
+# Best parameters obtained though grid search on 2025-04-17 using params_dmf.hyper
+model: 'DMF'
+dataset: 'ml-1m-dmf'
+data_path: 'data'
+field_separator: "\t"
+seed: 920
+reproducibility: True
+
+USER_ID_FIELD: user_id
+ITEM_ID_FIELD: item_id
+load_col:
+  inter: [user_id, item_id]
+
+# model config
+user_embedding_size: 256
+item_embedding_size: 256
+
+user_hidden_size_list: [256, 256]
+item_hidden_size_list: [256, 256]
+
+# Training and evaluation config
+gpu_id: 0
+epochs: 300
+train_batch_size: 4096
+eval_batch_size: 15009984
+learning_rate: 0.0001
+train_neg_sample_args:
+  distribution: uniform
+  sample_num: 1
+  alpha: 1.0
+  dynamic: False
+  candidate_num: 0
+eval_args:
+  group_by: user
+  order: RO
+  split: {'RS': [0.8,0.1,0.1]}
+  mode: full
+metrics: ['Recall', 'MRR', 'NDCG', 'Hit', 'Precision']
+topk: [10]
+valid_metric: NDCG@10
+metric_decimal_place: 6
+stopping_step: 25
