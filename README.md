@@ -1,5 +1,9 @@
 # CaliTune
-A companion repository for the paper: "Fine-tuning for Inference-efficient Calibrated Recommendations"
+Companion repository for the paper: "Fine-tuning for Inference-efficient Calibrated Recommendations" by <br>
+*Oleg Lesota*, *Adrian Bajko*, *Max Walder*, *Matthias Wenzel*, *Antonela Tommasel*, and *Markus Schedl*
+
+accepted for the LBR track at RecSys 2025
+
 
 Contents:
 - [Additional results](#additional-results)
